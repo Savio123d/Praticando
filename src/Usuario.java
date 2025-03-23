@@ -6,7 +6,12 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public boolean verificarSenha(String senhaDigitada) {
+        return this.senha.equals(senhaDigitada);
+    }
+
+    @Override
+    public String toString() {
+        return "Nome: " + nome;
     }
 }
